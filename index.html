@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="VYNTORA — Gadgets, Fashion, Watches, Cosmetics and more.">
+  <title>VYNTORA | Online Shopping</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+    }
+    header {
+      background: #101827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      letter-spacing: 4px;
+      color: #f4c76b;
+    }
+    header p { margin-bottom: 0; }
+    nav {
+      background: white;
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    nav a {
+      display: inline-block;
+      margin: 5px 8px;
+      color: #172033;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      margin: 20px auto;
+      padding: 42px 20px;
+      max-width: 1000px;
+      border-radius: 18px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #101827, #34476a);
+    }
+    .hero h2 { font-size: 30px; }
+    .hero p { line-height: 1.7; }
+    .btn {
+      display: inline-block;
+      background: #f4c76b;
+      color: #101827;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { padding: 0 16px 30px; }
+    .categories, .products {
+      max-width: 1000px;
+      margin: 25px auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .item {
+      background: white;
+      padding: 22px 10px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #1720330d;
+    }
+    .emoji { font-size: 32px; }
+    footer {
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 24px 12px;
+    }
+    @media (min-width: 650px) {
+      .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .hero h2 { font-size: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VYNTORA</h1>
+    <p>Your Style. Your Technology. Your Store.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#products">Products</a>
+    <a href="#account">Account</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <h2>Welcome to VYNTORA</h2>
+      <p>Discover gadgets, fashion, watches, cosmetics and more.</p>
+      <a class="btn" href="#categories">Explore Shopping</a>
+    </section>
+
+    <section class="categories" id="categories">
+      <h2>Shop by Category</h2>
+      <div class="grid">
+        <div class="item"><div class="emoji">📱</div><h3>Gadgets</h3></div>
+        <div class="item"><div class="emoji">👕</div><h3>Fashion</h3></div>
+        <div class="item"><div class="emoji">⌚</div><h3>Watches</h3></div>
+        <div class="item"><div class="emoji">💄</div><h3>Cosmetics</h3></div>
+        <div class="item"><div class="emoji">💍</div><h3>Jewelry</h3></div>
+        <div class="item"><div class="emoji">🏠</div><h3>Home & Living</h3></div>
+        <div class="item"><div class="emoji">🎒</div><h3>Accessories</h3></div>
+        <div class="item"><div class="emoji">🛍️</div><h3>More Products</h3></div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Featured Products</h2>
+      <div class="item">
+        <div class="emoji">🛒</div>
+        <h3>Products Coming Soon</h3>
+        <p>Our store is getting ready for you.</p>
+      </div>
+    </section>
+
+    <section class="item" id="account">
+      <h2>Your VYNTORA Account</h2>
+      <p>Account registration and login will be added in a later step.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h3>VYNTORA</h3>
+    <p>Quality Products. Trusted Shopping.</p>
+    <p>© 2026 VYNTORA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
